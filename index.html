@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Readiness Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">STUDENT CAREER READINESS TRACKER</p>
+      <h1>Your career dashboard</h1>
+      <p class="subtitle">Track your preparation and see where to focus next.</p>
+    </div>
+    <button id="resetBtn" class="button button-secondary" type="button">Reset scores</button>
+  </header>
+
+  <main class="container">
+    <section class="summary-card" aria-labelledby="score-title">
+      <div class="summary-copy">
+        <p class="eyebrow">YOUR OVERALL SCORE</p>
+        <h2 id="score-title"><span id="overallScore">72</span><span class="percent">%</span></h2>
+        <p id="scoreMessage" class="score-message">Good progress — keep building your skills.</p>
+        <div class="overall-track" role="progressbar" aria-label="Overall career readiness" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72" id="overallProgress">
+          <div id="overallBar" class="overall-fill"></div>
+        </div>
+      </div>
+      <div class="score-ring" id="scoreRing" aria-label="Overall readiness score 72 percent">
+        <div class="ring-center">
+          <strong id="ringScore">72%</strong>
+          <span>ready</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <div>
+        <h2>Readiness breakdown</h2>
+        <p>Update each category to reflect your current preparation.</p>
+      </div>
+      <span class="saved-label" id="savedLabel"><span class="saved-dot"></span> Saved in this browser</span>
+    </section>
+
+    <section class="skills-grid" id="skillsGrid" aria-label="Career readiness categories">
+      <!-- Categories are rendered by script.js -->
+    </section>
+
+    <section class="tip-card">
+      <div class="tip-icon" aria-hidden="true">✦</div>
+      <div>
+        <h3>Your next focus area</h3>
+        <p id="focusMessage">Work on the category with the lowest score to improve your overall readiness.</p>
+      </div>
+    </section>
+    <p class="footnote">Your scores are saved in this browser using LocalStorage. This demo does not send your data to a server.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
