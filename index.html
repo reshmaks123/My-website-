@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:#0077cc;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+nav{
+    background:#222;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+section{
+    width:80%;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+ul{
+    margin-left:20px;
+}
+
+button{
+    padding:10px 20px;
+    background:#0077cc;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#005999;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Reshma KS</h1>
+    <p>BTech Computer Science Engineering Student</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Reshma KS, a BTech CSE student passionate about web development, programming, and learning new technologies.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>C Programming</li>
+        <li>Python</li>
+        <li>Git & GitHub</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Personal Portfolio Website</h3>
+        <p>Developed using HTML, CSS and JavaScript.</p>
+    </div>
+
+    <div class="card">
+        <h3>Student Management System</h3>
+        <p>A mini academic project for managing student records.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: rks489849@gmail.com</p>
+    <p>Phone:9567792654</p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <p id="msg"></p>
+</section>
+
+<footer>
+    <p>© 2026 Reshma KS | All Rights Reserved</p>
+</footer>
+
+<script>
+function showMessage(){
+    document.getElementById("msg").innerHTML =
+    "Thank you for visiting my portfolio!";
+}
+</script>
+
+</body>
+</html>
